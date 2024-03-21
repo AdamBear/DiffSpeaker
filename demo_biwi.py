@@ -94,7 +94,7 @@ def main():
     output_dir = os.path.join(cfg.FOLDER, str(cfg.model.model_type), str(cfg.NAME), "samples_" + cfg.TIME)
     file_name = os.path.join(output_dir,test_name + "_" + subject_id + '.mp4')
 
-    animate(vertices, wav_path, file_name, cfg.DEMO.PLY, fps=25, use_tqdm=True, multi_process=True)
+    animate(vertices, wav_path, file_name, cfg.DEMO.PLY, fps=25, use_tqdm=True, multi_process=False)
 
 if __name__ == "__main__":
     main()
