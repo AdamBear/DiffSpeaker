@@ -43,7 +43,7 @@ LOSS:
 
 audio_encoder:
   train_audio_encoder: True
-  model_name_or_path: "facebook/hubert-base-ls960"
+  model_name_or_path: "/data/hubert-base-ls960"
 
 # Model Configuration
 model:

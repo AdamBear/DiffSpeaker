@@ -24,7 +24,7 @@ if platform.system() == "Linux":
 
 def load_example_input(audio_path, processor = None):
     if processor is None:
-        processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
+        processor = Wav2Vec2Processor.from_pretrained("/data/wav2vec2-base-960h")
     
     speech_array, sampling_rate = librosa.load(
             os.path.join(audio_path), 

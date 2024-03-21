@@ -90,7 +90,7 @@ class BIWIDataModule(BASEDataModule):
         self.root_dir = kwargs.get('data_root', 'datasets/BIWI')
         self.audio_dir = 'wav'
         self.vertice_dir = 'vertices_npy'
-        processor = Wav2Vec2Processor.from_pretrained("facebook/wav2vec2-base-960h")
+        processor = Wav2Vec2Processor.from_pretrained("/data/wav2vec2-base-960h")
         self.template_file = 'templates.pkl'
 
         self.nfeats = 70110
